@@ -27,6 +27,9 @@
 		655FBBA23F4582E7F38E5B48 /* Pods_MovieAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A086F20A1E67A9E77AB2FE6 /* Pods_MovieAppTests.framework */; };
 		78486F138A51488E9D16D9A1 /* Pods_MovieApp_MovieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D8BE658022818DF7CAE069 /* Pods_MovieApp_MovieAppUITests.framework */; };
 		78529FA036FBEEEA7C121B3E /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AA382E97DB313F008EF2D1 /* Pods_MovieApp.framework */; };
+		F8C355672BB1DEF3005C520E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C355662BB1DEF3005C520E /* Storyboarded.swift */; };
+		F8C3556B2BB1E2FA005C520E /* UIViewController+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3556A2BB1E2FA005C520E /* UIViewController+Additionals.swift */; };
+		F8C3556D2BB1E42C005C520E /* Storyboard+Casting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C3556C2BB1E42C005C520E /* Storyboard+Casting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		95ADB8131480CADA15648685 /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
 		95D8BE658022818DF7CAE069 /* Pods_MovieApp_MovieAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp_MovieAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA7CA4C44D61BE48F716150 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F8C355662BB1DEF3005C520E /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		F8C3556A2BB1E2FA005C520E /* UIViewController+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additionals.swift"; sourceTree = "<group>"; };
+		F8C3556C2BB1E42C005C520E /* Storyboard+Casting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Casting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 		0CC3D2DC2B7BBA1B001FF10A /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				F8C355682BB1E2DE005C520E /* Extensions */,
 				0CC3D30E2B7E11B9001FF10A /* Modules */,
 				0CC3D3132B7E15D2001FF10A /* Components */,
 				0CC3D3142B7E15ED001FF10A /* Services */,
@@ -339,6 +346,7 @@
 		0CC3D3332B7F956F001FF10A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				F8C355652BB1DED9005C520E /* Storyboard */,
 				0CC3D3152B7E1620001FF10A /* MovieAppTabbarViewController.swift */,
 				0CC3D3172B7E16C8001FF10A /* SideMenuTableViewController.swift */,
 				0CC3D3212B7E1BEE001FF10A /* MovieAppButton.swift */,
@@ -389,6 +397,31 @@
 				0F70EE4744965CFAE3D93811 /* Pods-MovieAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8C355652BB1DED9005C520E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F8C355662BB1DEF3005C520E /* Storyboarded.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F8C355682BB1E2DE005C520E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8C355692BB1E2E7005C520E /* UI */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8C355692BB1E2E7005C520E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F8C3556A2BB1E2FA005C520E /* UIViewController+Additionals.swift */,
+				F8C3556C2BB1E42C005C520E /* Storyboard+Casting.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,15 +684,18 @@
 			files = (
 				0CC3D2E22B7BBA1B001FF10A /* ViewController.swift in Sources */,
 				0CC3D3162B7E1620001FF10A /* MovieAppTabbarViewController.swift in Sources */,
+				F8C3556D2BB1E42C005C520E /* Storyboard+Casting.swift in Sources */,
 				0CC3D3262B7E1D96001FF10A /* MovieAppColors.swift in Sources */,
 				0CC3D3282B7E1DB5001FF10A /* MovieAppIcons.swift in Sources */,
 				0CC3D2DE2B7BBA1B001FF10A /* AppDelegate.swift in Sources */,
 				0CC3D3322B7E2179001FF10A /* SeriesListCordinatoor.swift in Sources */,
+				F8C3556B2BB1E2FA005C520E /* UIViewController+Additionals.swift in Sources */,
 				0CC3D32A2B7E2119001FF10A /* MovieListCordinatoor.swift in Sources */,
 				0CC3D2E02B7BBA1B001FF10A /* SceneDelegate.swift in Sources */,
 				0CC3D3222B7E1BEE001FF10A /* MovieAppButton.swift in Sources */,
 				0CC3D3242B7E1C3F001FF10A /* SideAtributtedBars.swift in Sources */,
 				0CC3D3182B7E16C8001FF10A /* SideMenuTableViewController.swift in Sources */,
+				F8C355672BB1DEF3005C520E /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
