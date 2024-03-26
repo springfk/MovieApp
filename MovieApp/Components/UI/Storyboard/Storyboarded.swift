@@ -21,7 +21,6 @@ protocol Storyboarded: AnyObject {
      */
     static func instantiate() throws -> Self
     
-    
 }
 
 /**
@@ -39,7 +38,6 @@ enum StoryboardedError: LocalizedError {
 extension UIViewController: Storyboarded {}
 
 extension Storyboarded where Self: UIViewController {
-
 
     static var storyboardFilename: String { storyboardName }
     
@@ -65,5 +63,3 @@ extension Storyboarded where Self: UIViewController {
     }
 
 }
-
-

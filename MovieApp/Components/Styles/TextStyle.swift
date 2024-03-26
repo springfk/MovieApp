@@ -27,7 +27,8 @@ extension TextStyle {
     
     var font: UIFont {
         guard let font = UIFont(name: fontName, size: size) else {
-            assert("Could not found the font name \(fontName)")
+            assertionFailure("Could not found the font name \(fontName)")
+            return UIFont.systemFont(ofSize: size)
         }
         return font
     }

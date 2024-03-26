@@ -42,6 +42,7 @@ extension Color where Self: StringProtocol {
                 assertionFailure("Color missing from asset catalogue")
                 return .systemPink
             }
+            return color
         }
 
         #else
