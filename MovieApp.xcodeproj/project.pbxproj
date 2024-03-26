@@ -30,6 +30,9 @@
 		F8108ACF2BB338A000106991 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108ACE2BB338A000106991 /* Color.swift */; };
 		F8108AD22BB3434B00106991 /* AppTintColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108AD12BB3434B00106991 /* AppTintColors.swift */; };
 		F8108AD42BB3461D00106991 /* AppFillColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108AD32BB3461D00106991 /* AppFillColors.swift */; };
+		F8108AD62BB34C7800106991 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108AD52BB34C7800106991 /* TextStyle.swift */; };
+		F8108ADA2BB34DC600106991 /* AppTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108AD92BB34DC600106991 /* AppTextStyle.swift */; };
+		F8108ADC2BB34EE500106991 /* DefaultTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108ADB2BB34EE500106991 /* DefaultTextStyle.swift */; };
 		F8ADED392B99C9C300B24DEB /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADED382B99C9C300B24DEB /* SampleView.swift */; };
 		F8ADED3B2B99DC7D00B24DEB /* CircularRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADED3A2B99DC7D00B24DEB /* CircularRateView.swift */; };
 		F8ADED3E2B99E77600B24DEB /* UIColor+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADED3D2B99E77600B24DEB /* UIColor+Additionals.swift */; };
@@ -89,6 +92,9 @@
 		F8108ACE2BB338A000106991 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		F8108AD12BB3434B00106991 /* AppTintColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTintColors.swift; sourceTree = "<group>"; };
 		F8108AD32BB3461D00106991 /* AppFillColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFillColors.swift; sourceTree = "<group>"; };
+		F8108AD52BB34C7800106991 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		F8108AD92BB34DC600106991 /* AppTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextStyle.swift; sourceTree = "<group>"; };
+		F8108ADB2BB34EE500106991 /* DefaultTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTextStyle.swift; sourceTree = "<group>"; };
 		F8ADED382B99C9C300B24DEB /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		F8ADED3A2B99DC7D00B24DEB /* CircularRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRateView.swift; sourceTree = "<group>"; };
 		F8ADED3D2B99E77600B24DEB /* UIColor+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additionals.swift"; sourceTree = "<group>"; };
@@ -418,7 +424,9 @@
 		F8108ACD2BB3388000106991 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				F8108AD72BB34D9C00106991 /* TextStyles */,
 				F8108ACE2BB338A000106991 /* Color.swift */,
+				F8108AD52BB34C7800106991 /* TextStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -428,8 +436,17 @@
 			children = (
 				F8108AD12BB3434B00106991 /* AppTintColors.swift */,
 				F8108AD32BB3461D00106991 /* AppFillColors.swift */,
+				F8108AD92BB34DC600106991 /* AppTextStyle.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		F8108AD72BB34D9C00106991 /* TextStyles */ = {
+			isa = PBXGroup;
+			children = (
+				F8108ADB2BB34EE500106991 /* DefaultTextStyle.swift */,
+			);
+			path = TextStyles;
 			sourceTree = "<group>";
 		};
 		F8ADED362B99C9A700B24DEB /* Views */ = {
@@ -735,6 +752,8 @@
 				F8ADED3E2B99E77600B24DEB /* UIColor+Additionals.swift in Sources */,
 				0CC3D2E22B7BBA1B001FF10A /* ViewController.swift in Sources */,
 				0CC3D3162B7E1620001FF10A /* MovieAppTabbarViewController.swift in Sources */,
+				F8108AD62BB34C7800106991 /* TextStyle.swift in Sources */,
+				F8108ADA2BB34DC600106991 /* AppTextStyle.swift in Sources */,
 				F8C3556D2BB1E42C005C520E /* Storyboard+Casting.swift in Sources */,
 				F8108AD42BB3461D00106991 /* AppFillColors.swift in Sources */,
 				0CC3D3262B7E1D96001FF10A /* MovieAppColors.swift in Sources */,
@@ -748,6 +767,7 @@
 				0CC3D32A2B7E2119001FF10A /* MovieListCordinatoor.swift in Sources */,
 				0CC3D2E02B7BBA1B001FF10A /* SceneDelegate.swift in Sources */,
 				0CC3D3222B7E1BEE001FF10A /* MovieAppButton.swift in Sources */,
+				F8108ADC2BB34EE500106991 /* DefaultTextStyle.swift in Sources */,
 				0CC3D3242B7E1C3F001FF10A /* SideAtributtedBars.swift in Sources */,
 				0CC3D3182B7E16C8001FF10A /* SideMenuTableViewController.swift in Sources */,
 				F8C355672BB1DEF3005C520E /* Storyboarded.swift in Sources */,

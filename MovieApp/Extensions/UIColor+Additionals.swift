@@ -107,7 +107,7 @@ extension UIColor {
             case .light, .unspecified:
                 return lightColor
             @unknown default:
-                return nil
+                return lightColor
             }
         }
     }
