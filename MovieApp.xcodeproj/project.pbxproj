@@ -27,6 +27,9 @@
 		655FBBA23F4582E7F38E5B48 /* Pods_MovieAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A086F20A1E67A9E77AB2FE6 /* Pods_MovieAppTests.framework */; };
 		78486F138A51488E9D16D9A1 /* Pods_MovieApp_MovieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D8BE658022818DF7CAE069 /* Pods_MovieApp_MovieAppUITests.framework */; };
 		78529FA036FBEEEA7C121B3E /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AA382E97DB313F008EF2D1 /* Pods_MovieApp.framework */; };
+		F8108ACF2BB338A000106991 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108ACE2BB338A000106991 /* Color.swift */; };
+		F8108AD22BB3434B00106991 /* AppTintColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108AD12BB3434B00106991 /* AppTintColors.swift */; };
+		F8108AD42BB3461D00106991 /* AppFillColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8108AD32BB3461D00106991 /* AppFillColors.swift */; };
 		F8ADED392B99C9C300B24DEB /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADED382B99C9C300B24DEB /* SampleView.swift */; };
 		F8ADED3B2B99DC7D00B24DEB /* CircularRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADED3A2B99DC7D00B24DEB /* CircularRateView.swift */; };
 		F8ADED3E2B99E77600B24DEB /* UIColor+Additionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8ADED3D2B99E77600B24DEB /* UIColor+Additionals.swift */; };
@@ -83,6 +86,9 @@
 		95ADB8131480CADA15648685 /* Pods-MovieApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.release.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.release.xcconfig"; sourceTree = "<group>"; };
 		95D8BE658022818DF7CAE069 /* Pods_MovieApp_MovieAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp_MovieAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA7CA4C44D61BE48F716150 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F8108ACE2BB338A000106991 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F8108AD12BB3434B00106991 /* AppTintColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTintColors.swift; sourceTree = "<group>"; };
+		F8108AD32BB3461D00106991 /* AppFillColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFillColors.swift; sourceTree = "<group>"; };
 		F8ADED382B99C9C300B24DEB /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		F8ADED3A2B99DC7D00B24DEB /* CircularRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRateView.swift; sourceTree = "<group>"; };
 		F8ADED3D2B99E77600B24DEB /* UIColor+Additionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additionals.swift"; sourceTree = "<group>"; };
@@ -239,6 +245,7 @@
 		0CC3D3132B7E15D2001FF10A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F8108ACD2BB3388000106991 /* Styles */,
 				0CC3D3332B7F956F001FF10A /* UI */,
 			);
 			path = Components;
@@ -368,6 +375,7 @@
 		0CC3D3342B7F9781001FF10A /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F8108AD02BB3434000106991 /* Styles */,
 				0CC3D2DD2B7BBA1B001FF10A /* AppDelegate.swift */,
 				0CC3D2DF2B7BBA1B001FF10A /* SceneDelegate.swift */,
 			);
@@ -405,6 +413,23 @@
 				0F70EE4744965CFAE3D93811 /* Pods-MovieAppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8108ACD2BB3388000106991 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F8108ACE2BB338A000106991 /* Color.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		F8108AD02BB3434000106991 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				F8108AD12BB3434B00106991 /* AppTintColors.swift */,
+				F8108AD32BB3461D00106991 /* AppFillColors.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		F8ADED362B99C9A700B24DEB /* Views */ = {
@@ -711,10 +736,12 @@
 				0CC3D2E22B7BBA1B001FF10A /* ViewController.swift in Sources */,
 				0CC3D3162B7E1620001FF10A /* MovieAppTabbarViewController.swift in Sources */,
 				F8C3556D2BB1E42C005C520E /* Storyboard+Casting.swift in Sources */,
+				F8108AD42BB3461D00106991 /* AppFillColors.swift in Sources */,
 				0CC3D3262B7E1D96001FF10A /* MovieAppColors.swift in Sources */,
 				F8ADED3B2B99DC7D00B24DEB /* CircularRateView.swift in Sources */,
 				0CC3D3282B7E1DB5001FF10A /* MovieAppIcons.swift in Sources */,
 				F8ADED392B99C9C300B24DEB /* SampleView.swift in Sources */,
+				F8108AD22BB3434B00106991 /* AppTintColors.swift in Sources */,
 				0CC3D2DE2B7BBA1B001FF10A /* AppDelegate.swift in Sources */,
 				0CC3D3322B7E2179001FF10A /* SeriesListCordinatoor.swift in Sources */,
 				F8C3556B2BB1E2FA005C520E /* UIViewController+Additionals.swift in Sources */,
@@ -724,6 +751,7 @@
 				0CC3D3242B7E1C3F001FF10A /* SideAtributtedBars.swift in Sources */,
 				0CC3D3182B7E16C8001FF10A /* SideMenuTableViewController.swift in Sources */,
 				F8C355672BB1DEF3005C520E /* Storyboarded.swift in Sources */,
+				F8108ACF2BB338A000106991 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,7 +811,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -846,7 +874,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

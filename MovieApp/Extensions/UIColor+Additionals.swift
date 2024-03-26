@@ -12,7 +12,7 @@ extension UIColor {
 
     /**
      Create and return UIColor from hex string format
-     - Parameter hexString: the hex string object without supporing alpha
+     - Parameter hexString: the hex string object without supporting alpha
      - Note: if you pass hex value with alpha, the alpha value will be ignored.
      */
     convenience init?(hexString: String?) {
@@ -37,7 +37,7 @@ extension UIColor {
 
     /**
      Create and return UIColor from hex format in `UIInt64`
-     - Parameter rgbValue: the `UInt64`of hex value object without supporing alpha
+     - Parameter rgbValue: the `UInt64`of hex value object without supporting alpha
      - Note: if you pass hex value with alpha, the alpha value will be ignored.
      */
     convenience init(rgb rgbValue: UInt64 = 0) {
@@ -91,4 +91,25 @@ extension UIColor {
 
     }
 
+}
+
+extension UIColor {
+    
+    convenience init?(lightHex light: String, darkHex dark: String) {
+        guard let lightColor = UIColor(hexString: light),
+              let darkColor = UIColor(hexString: dark) else {
+            return nil
+        }
+        self.init { traitCollection in
+            switch traitCollection.userInterfaceStyle {
+            case .dark:
+                return darkColor
+            case .light, .unspecified:
+                return lightColor
+            @unknown default:
+                return nil
+            }
+        }
+    }
+    
 }
